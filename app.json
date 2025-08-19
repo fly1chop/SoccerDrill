@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "SoccerDrill",
-    "slug": "codingisfun",
+    "slug": "SoccerDrill",
     "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -34,8 +34,21 @@
     },
     "extra": {
       "eas": {
-        "projectId": "e870167a-dfad-4dc8-b8e4-9ba47ac3ac8f"
+        "projectId": "fd3d9a2a-7b17-46f8-8180-e3154a52093f"
       }
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "allowBackup": false,
+            "targetSdkVersion": 35
+          }
+        }
+      ]
+    ],
+    "owner": "jiwonro"
   }
 }
